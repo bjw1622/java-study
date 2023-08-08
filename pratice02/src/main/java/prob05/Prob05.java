@@ -14,12 +14,15 @@ public class Prob05 {
 			// 정답 램덤하게 만들기
 			Random random = new Random();
 			int correctNumber = random.nextInt( 100 ) + 1;
+			int low = 1;
+			int high = 100;
 			System.out.println("수를 결정하였습니다. 맞추어 보세요");
-			System.out.println("1-100");
+			System.out.println(correctNumber);
 			
 			int gamePlayNum = 1;
 
 			while(true) {
+				System.out.println(low + "-"+high);
 				System.out.print(gamePlayNum+">>");
 				int target = scanner.nextInt();
 				if(target == correctNumber) {
@@ -28,10 +31,12 @@ public class Prob05 {
 				else if (target > correctNumber) {
 					gamePlayNum += 1;
 					System.out.println("더 낮게");
+					high = target;
 				}
 				else if (target < correctNumber) {
 					gamePlayNum += 1;
 					System.out.println("더 높게");
+					low = target;
 				}
 			}
 			
