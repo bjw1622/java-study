@@ -42,4 +42,14 @@ public class Goods {
 	public void setCountsold(int countsold) {
 		this.countsold = countsold;
 	}
+
+	public void showInfo() {
+		System.out.println("상품이름 :" + this.name + "   가격: " + this.price + " 재고개수: " + this.countStock
+				+ " 팔린 개수: " + this.countsold);
+		
+	}
+
+	public int calcDiscountPrice(double discountRate) {
+		return (int)(price * discountRate);
+	}
 }
