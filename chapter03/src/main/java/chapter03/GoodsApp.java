@@ -26,7 +26,9 @@ public class GoodsApp {
 
 		Goods goods3 = new Goods();
 		System.out.println(goods3.countofGoods);
-
+		
+		Goods tv = new Goods("TV",400000,10,20);
+		tv.showInfo();
 	}
 
 }

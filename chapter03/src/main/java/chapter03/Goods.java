@@ -10,6 +10,14 @@ public class Goods {
 	public Goods() {
 		countofGoods++;
 	}
+	// 생성자의 오버로딩
+	public Goods(String name, int price, int countStock, int countsold) {
+		super();
+		this.name = name;
+		this.price = price;
+		this.countStock = countStock;
+		this.countsold = countsold;
+	}
 
 	public String getName() {
 		return name;
@@ -44,12 +52,12 @@ public class Goods {
 	}
 
 	public void showInfo() {
-		System.out.println("상품이름 :" + this.name + "   가격: " + this.price + " 재고개수: " + this.countStock
-				+ " 팔린 개수: " + this.countsold);
-		
+		System.out.println("상품이름 :" + this.name + "   가격: " + this.price + " 재고개수: " + this.countStock + " 팔린 개수: "
+				+ this.countsold);
+
 	}
 
 	public int calcDiscountPrice(double discountRate) {
-		return (int)(price * discountRate);
+		return (int) (price * discountRate);
 	}
 }
