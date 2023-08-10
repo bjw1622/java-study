@@ -1,4 +1,6 @@
-package paint;
+package com.poscodx.paint.shape;
+
+import com.poscodx.paint.i.Drawable;
 
 public class Point implements Drawable {
 	private int x;

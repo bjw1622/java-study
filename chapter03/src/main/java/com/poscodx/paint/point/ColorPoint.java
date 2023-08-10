@@ -1,4 +1,6 @@
-package paint;
+package com.poscodx.paint.point;
+
+import com.poscodx.paint.shape.Point;
 
 public class ColorPoint extends Point {
 
