@@ -17,21 +17,44 @@ public class TV {
 	}
 
 	public void channel(boolean up) {
-		if(up == true) {
-			
+		if (up == true) {
+				if(this.channel == 255) {
+					this.channel = 1;
+				}
+				else {
+					this.channel += 1;
+				}
 		}
 	}
 
 	// 오버 로딩x
 	public void channel(int i) {
-
+		if(i == 0) {
+			this.channel = 255;
+		}
+		else {
+			this.channel = i;
+		}
 	}
 
 	public void volume(int i) {
-
+		if(i > 100) {
+			this.volume = 0;
+		}
+		else {
+			this.volume = i;
+		}
 	}
 
 	public void volume(boolean up) {
+		if(up == false) {
+			if(this.volume == 0) {
+				this.volume = 100;
+			}
+			else {
+				this.volume -= 1;
+			}
+		}
 
 	}
 
