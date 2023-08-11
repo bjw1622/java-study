@@ -2,8 +2,8 @@ package com.poscodx.paint.main;
 
 import com.poscodx.paint.i.Drawable;
 import com.poscodx.paint.point.ColorPoint;
+import com.poscodx.paint.point.Point;
 import com.poscodx.paint.shape.Circle;
-import com.poscodx.paint.shape.Point;
 import com.poscodx.paint.shape.Rect;
 import com.poscodx.paint.shape.Shape;
 import com.poscodx.paint.shape.Triangle;
