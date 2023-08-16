@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pratice05" />
+        <module name="pratice04" />
+        <module name="pratice03" />
+        <module name="finaltest" />
+        <module name="test" />
+        <module name="testtest" />
+        <module name="chapter03" />
+        <module name="chapter04" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

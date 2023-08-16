@@ -21,5 +21,6 @@
   		<module>pratice05</module>
   		<module>test</module>
   		<module>finaltest</module>
-  	</modules>
+		<module>testtest</module>
+	</modules>
 </project>
