@@ -20,5 +20,6 @@
   		<module>chapter04</module>
   		<module>pratice05</module>
   		<module>test</module>
+  		<module>finaltest</module>
   	</modules>
 </project>
