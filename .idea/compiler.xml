@@ -10,11 +10,13 @@
         <module name="pratice04" />
         <module name="pratice03" />
         <module name="finaltest" />
-        <module name="test" />
-        <module name="testtest" />
         <module name="chapter03" />
         <module name="chapter04" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="test" target="17" />
+      <module name="testtest" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
