@@ -53,6 +53,7 @@ public class GugudanApp {
 		int[] boardNumbers = new int[COUNT_ANSWER_NUMBER];
 
 		Random random =  new Random();
+
 		Set<Integer> boardNumberSet = new HashSet<Integer>();
 		while(boardNumberSet.size() != 9){
 			int randomNumber = random.nextInt(81)+1;
