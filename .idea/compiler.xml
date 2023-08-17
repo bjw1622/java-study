@@ -15,6 +15,7 @@
         <module name="test" />
         <module name="chapter03" />
         <module name="chapter04" />
+        <module name="network" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
