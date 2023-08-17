@@ -15,5 +15,4 @@ public class MyStackException extends Exception {
 	public String toString() {
 		return "Prob5.MyStackException:: stack is empty";
 	}
-
 }
