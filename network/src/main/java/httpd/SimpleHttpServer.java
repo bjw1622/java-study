@@ -15,11 +15,11 @@ public class SimpleHttpServer {
 		try {
 			// 1. Create Server Socket
 			serverSocket = new ServerSocket();
-			   
+
 			// 2. Bind
-			serverSocket.bind(new InetSocketAddress("127.0.0.1", PORT));
+			serverSocket.bind(new InetSocketAddress("0.0.0.0", PORT));
 			log("starts...[port:" + PORT + "]");
-			
+
 			while (true) {
 				// 3. Wait for connecting ( accept )
 				Socket socket = serverSocket.accept();
