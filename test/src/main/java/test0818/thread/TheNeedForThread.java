@@ -2,6 +2,7 @@ package test0818.thread;
 
 public class TheNeedForThread {
     public static void main(String[] args) {
+        // 싱글 스레드만 사용했을 때의 문제점
         int[] intArray = new int[]{1, 2, 3, 4, 5};
         String[] strArray = new String[]{"하나", "둘", "셋", "넷", "다섯"};
 

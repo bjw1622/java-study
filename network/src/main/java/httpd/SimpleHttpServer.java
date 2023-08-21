@@ -17,7 +17,7 @@ public class SimpleHttpServer {
 			serverSocket = new ServerSocket();
 			   
 			// 2. Bind
-			serverSocket.bind(new InetSocketAddress("0.0.0.0", PORT));
+			serverSocket.bind(new InetSocketAddress("127.0.0.1", PORT));
 			log("starts...[port:" + PORT + "]");
 			
 			while (true) {
