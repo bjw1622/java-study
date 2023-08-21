@@ -24,7 +24,7 @@ public class ChatClient {
             BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
             String line = null;
-            InputThread inputThread = new InputThread(in);
+            ChatClientThread inputThread = new ChatClientThread(in);
             inputThread.start();
 
             while ((line = keyboard.readLine()) != null) {
@@ -38,24 +38,3 @@ public class ChatClient {
 }
 
 
-// 계속 읽어들이기
-class InputThread extends Thread {
-    BufferedReader in = null;
-
-    public InputThread(BufferedReader in) {
-        this.in = in;
-    }
-
-    public void run() {
-        String line = null;
-        try {
-            if ((line = in.readLine()) != null) {
-                System.out.println(line);
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-
-        }
-    }
-
-}
