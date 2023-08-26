@@ -22,7 +22,7 @@ public class ChatServer {
 
             String hostAddress = InetAddress.getLocalHost().getHostAddress();
             serverSocket.bind(new InetSocketAddress(hostAddress, PORT), 5);
-            log("연결 Loading : " + hostAddress + " "+PORT);
+            log("연결 Loading : " + hostAddress + " " + PORT);
 
             while (true) {
                 Socket socket = serverSocket.accept();
@@ -44,5 +44,4 @@ public class ChatServer {
     public static void log(String msg) {
         System.out.println("[Chat Server]" + msg);
     }
-
 }

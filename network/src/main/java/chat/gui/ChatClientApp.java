@@ -17,7 +17,7 @@ public class ChatClientApp {
         Scanner scanner = new Scanner(System.in);
         Socket socket = null;
 
-		// 대화명 한글자 이상 입력
+        // 대화명 한글자 이상 입력
         while (true) {
             System.out.println("대화명을 입력하세요.");
             System.out.print("> ");
@@ -56,7 +56,7 @@ public class ChatClientApp {
         }
     }
 
-    private static void log(String message) {
-        System.out.println("[클라이언트] " + message);
+    private static void log(String msg) {
+        System.out.println("[client] " + msg);
     }
 }

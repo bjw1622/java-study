@@ -69,7 +69,7 @@ public class ChatWindow {
         frame.pack();
 
 
-        updateTextArea("채팅창에 입장하였습니다.");
+        updateTextArea("채팅창에 입장했습니다.");
 
         try {
             pw = new PrintWriter(new OutputStreamWriter(socket.getOutputStream(), "utf-8"), true);
@@ -95,7 +95,7 @@ public class ChatWindow {
 
             System.out.println(ChatClientApp.nickname + "이 보내는 메세지 : " + message);
         } else {
-            updateTextArea("메세지는 한글자 이상 입력해야 합니다.");
+            updateTextArea("메세지는 한글자 이상 입력하셔야 합니다.");
         }
     }
 
@@ -137,7 +137,7 @@ public class ChatWindow {
         }
     }
 
-    private static void log(String message) {
-        System.out.println("[클라이언트] " + message);
+    private static void log(String msg) {
+        System.out.println("[클라이언트] " + msg);
     }
 }
