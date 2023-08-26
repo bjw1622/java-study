@@ -7,6 +7,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class ChatClient {
+    // Mac ip 변동 이슈로 "0.0.0.0" 허용
     private static final String SERVER_IP = "0.0.0.0";
     private static final int SERVER_PORT = 9000;
 
